@@ -1,1 +1,33 @@
-<mxfile host="www.draw.io" modified="2019-10-07T22:30:26.089Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36" etag="NClV0DqJHsZposyw0CK5" version="12.0.2" type="github" pages="2"><diagram id="vnAJTbzXTNaGm4R2M7Tw" name="GUI Design">ddG9DoMgEADgp2FHsY27te3i5NCZyFVI0DNIo+3TVwPUEtuFHN8dHD+EFd18MXyQFQrQJKViJuxE0jQ/ZMu4wtNBdswdtEYJR8kGtXqBR+r1oQSMUaFF1FYNMTbY99DYyLgxOMVld9Rx14G3sIO64XqvNyWsDNeim19BtTJ0TqjPdDwUexglFzh9ESsJKwyidVE3F6DXtwvv4tad/2Q/BzPQ2x8LlmDbe5lEH8TKNw==</diagram><diagram id="-thM3_jWUVVgfu3gWeLv" name="Suggestion App Design">ldFBD4IgFADgX8PRzaRaHZuWXVpzWp2ZkLLQx5BS+/XZ0Ix5qQuDj8eD90DYL5pQEZkfgDKBPJc2CAfI81aLeTe+oTUwX64MZIpTQ7MRYv5kPbq93jlllRWoAYTm0sYUypKl2jKiFNR22BWEfaskGZtAnBIx1QunOh/KckffM57lw80zt98pyBDcQ5UTCvUX4S3CvgLQZlY0PhPv3n36cqqlc0yStdxE57ANg8ctckyy3T9HPiUoVupfU3eT8WndwvpfvH0B</diagram></mxfile>
+<mxfile host="www.draw.io" modified="2019-10-20T20:24:09.419Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36" etag="fhQa-jfKShFXKm5orsQZ" version="12.1.3" type="github" pages="2">
+  <diagram id="vnAJTbzXTNaGm4R2M7Tw" name="GUI Design">
+    <mxGraphModel dx="854" dy="468" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="ZuZDDEVdr5Cutukgd9yc-8" value="" style="shape=image;imageAspect=0;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;fillColor=none;fontFamily=Helvetica;align=left;image=http://c1.peakpx.com/wallpaper/608/288/972/kiwi-coctail-kefir-fruit-kiwi-food-wallpaper-preview.jpg;" vertex="1" parent="1">
+          <mxGeometry y="143" width="174" height="116" as="geometry"/>
+        </mxCell>
+        <mxCell id="ZuZDDEVdr5Cutukgd9yc-7" value="" style="shape=image;imageAspect=0;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;fillColor=none;fontFamily=Helvetica;align=left;image=https://get.pxhere.com/photo/white-fruit-isolated-ripe-meal-food-red-cooking-ingredient-produce-natural-fresh-drink-gourmet-healthy-snack-strawberry-tomato-smoothie-juice-vitamin-nutrition-vegetables-seasonal-vegetarian-strawberries-diet-edible-gastronomy-organic-beverages-filled-milkshake-non-alcoholic-beverage-1105913.jpg;resizeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="143" width="174" height="115" as="geometry"/>
+        </mxCell>
+        <mxCell id="ZuZDDEVdr5Cutukgd9yc-6" value="&lt;font color=&quot;#00e070&quot;&gt;Place your cup on the right to get started!&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontFamily=Helvetica;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="20" y="9" width="220" height="311" as="geometry"/>
+        </mxCell>
+        <mxCell id="ZuZDDEVdr5Cutukgd9yc-11" value="LOGO" style="shape=ext;rounded=1;html=1;whiteSpace=wrap;dashed=1;dashPattern=1 4;fillColor=none;fontFamily=Helvetica;align=left;" vertex="1" parent="1">
+          <mxGeometry x="200" y="259" width="40" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="ZuZDDEVdr5Cutukgd9yc-12" value="ANNOUNCEMENTS" style="shape=ext;rounded=1;html=1;whiteSpace=wrap;dashed=1;dashPattern=1 4;fillColor=none;fontFamily=Helvetica;align=left;" vertex="1" parent="1">
+          <mxGeometry x="20" y="299" width="210" height="20" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="-thM3_jWUVVgfu3gWeLv" name="Suggestion App Design">
+    <mxGraphModel dx="854" dy="468" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="1Uwp-OTT9pAQVGyGDvkQ-0"/>
+        <mxCell id="1Uwp-OTT9pAQVGyGDvkQ-1" parent="1Uwp-OTT9pAQVGyGDvkQ-0"/>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
