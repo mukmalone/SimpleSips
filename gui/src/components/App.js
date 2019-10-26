@@ -1,8 +1,9 @@
 import React from 'react';
+import StartScreen from './screens/StartScreen'
 
 class App extends React.Component {
     render() {
-        return <div>This will be the Simple Sips GUI</div>;
+        return <StartScreen />;
     }
 }
 
