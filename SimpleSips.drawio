@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2019-10-27T22:28:12.326Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36" etag="SFAgZrbOeX60A_FQq-CG" version="12.1.7" type="github" pages="3">
+<mxfile host="www.draw.io" modified="2019-10-27T22:28:46.447Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36" etag="HXZELYy5oOJxnwdh5hRn" version="12.1.7" type="github" pages="3">
   <diagram id="vnAJTbzXTNaGm4R2M7Tw" name="GUI Design">
     <mxGraphModel dx="1005" dy="1651" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -141,7 +141,13 @@
           <mxGeometry x="790" y="560" width="20" height="20" as="geometry"/>
         </mxCell>
         <mxCell id="2mU6CC2YMkKs1-lJa94A-27" value="Confirm Order" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;fontColor=#00E070;" vertex="1" parent="1">
-          <mxGeometry x="695" y="770" width="120" height="30" as="geometry"/>
+          <mxGeometry x="705" y="740" width="120" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="2mU6CC2YMkKs1-lJa94A-29" value="Announcements" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=19;fontColor=#00E070;" vertex="1" parent="1">
+          <mxGeometry x="570" y="820" width="180" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="2mU6CC2YMkKs1-lJa94A-30" value="LOGO" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=19;fontColor=#00E070;" vertex="1" parent="1">
+          <mxGeometry x="740" y="800" width="70" height="20" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
