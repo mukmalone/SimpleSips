@@ -2,6 +2,7 @@ import React from 'react';
 import '../style.css';
 import Announcements from '../Announcements';
 import Logo from '../Logo';
+import IngredientControl from '../IngredientControl';
 
 class BuildDrinkScreen extends React.Component {
     render() {
@@ -9,31 +10,14 @@ class BuildDrinkScreen extends React.Component {
             <div className="body">
                 <h1>Welcome (name)!</h1>
                 <h1>Choose your ingredients</h1>
+                
                 <div className="grid-container">
-                    <div class="grid-item1">
-                        <img className="fruit-pictures" src={require('../images/strawberry.jpg')}></img>
-                        <div className="fruit-text">Strawberry</div>
-                    </div>
-                    <div class="grid-item2">
-                        <img className="fruit-pictures" src={require('../images/kiwi.jpg')}></img>
-                        <div className="fruit-text">Kiwi</div>
-                    </div>
-                    <div class="grid-item3">
-                        <img className="fruit-pictures" src={require('../images/blueberry.jpg')}></img>
-                        <div className="fruit-text">Blueberry</div>
-                    </div>
-                    <div class="grid-item4">
-                        <img className="fruit-pictures" src={require('../images/mango.jpg')}></img>
-                        <div className="fruit-text">Mango</div>
-                    </div>
-                    <div class="grid-item5">
-                        <img className="fruit-pictures" src={require('../images/banna.jpg')}></img>
-                        <div className="fruit-text">Banna</div>
-                    </div>
-                    <div class="grid-item6">
-                        <img className="fruit-pictures" src={require('../images/grapes.jpg')}></img>
-                        <div className="fruit-text">Grapes</div>
-                    </div>
+                    <IngredientControl class="grid-item1" src={require('../images/strawberry.jpg')} id="Strawberry" />
+                    <IngredientControl class="grid-item2" src={require('../images/kiwi.jpg')} id="Kiwi" />
+                    <IngredientControl class="grid-item3" src={require('../images/blueberry.jpg')} id="Blueberry" />
+                    <IngredientControl class="grid-item4" src={require('../images/mango.jpg')} id="Mango" />
+                    <IngredientControl class="grid-item5" src={require('../images/banna.jpg')} id="Banna" />
+                    <IngredientControl class="grid-item6" src={require('../images/grapes.jpg')} id="Grapes" />
                 </div>
                 <Logo />
                 <Announcements />

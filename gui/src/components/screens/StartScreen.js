@@ -9,8 +9,8 @@ class StartScreen extends React.Component {
             <div className="body">
                 <h1>Place your cup on the right to get started!</h1>
                 <div className="picture-box">
-                    <img className="pictures" src={require('../images/drink-1.jpg')}></img>
-                    <img className="pictures" src={require('../images/drink-2.jpg')}></img>
+                    <img className="pictures" alt="Drink 1" src={require('../images/drink-1.jpg')}></img>
+                    <img className="pictures" alt="Drink 2" src={require('../images/drink-2.jpg')}></img>
                 </div>
                 <Logo />
                 <Announcements />

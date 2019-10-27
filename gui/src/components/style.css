@@ -13,6 +13,7 @@ h1{
     color:forestgreen;
     text-align:center;
     margin:0px;
+    font-weight:700;
 }
 
 .picture-box {
@@ -22,7 +23,7 @@ h1{
 
 .pictures {
     display: inline-block;
-    height: 10%;
+    height: 60vh;
     width: auto;
 }
 
@@ -88,15 +89,33 @@ h1{
 .fruit-text {
     color: forestgreen;
     width: auto;
-    border-style: dashed;
-    border-width: 1px;
-    border-color: grey;
-    border-radius: 5px;
     padding: 10px;
     text-align: center;
 }
 
-.fruit-text:hover{
+.ingredient-control {
+    display:inline-block;
+    padding: 10px;
+    text-align: center;
+    width:20px;
+    border-style: dashed;
+    border-width: 1px;
+    border-color: grey;
+    border-radius: 5px;
+    color:forestgreen;
+}
+
+.ingredient-control:hover{
     background-color:forestgreen;
     color:white;
+}
+
+.ingredient-control-text {
+    display: inline-block;
+    padding: 10px;
+    width: 20px;
+    border-radius: 5px;
+    color: forestgreen;
+    text-align: center;
+    font-weight: 800;
 }
