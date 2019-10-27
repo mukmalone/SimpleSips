@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2019-10-27T20:57:19.337Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36" etag="II7qS40GTLrRLWKh9S5Q" version="12.1.7" type="github" pages="3">
+<mxfile host="www.draw.io" modified="2019-10-27T20:57:38.192Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36" etag="zCVVeQGoKepRtEvmkyLc" version="12.1.7" type="github" pages="3">
   <diagram id="vnAJTbzXTNaGm4R2M7Tw" name="GUI Design">
     <mxGraphModel dx="854" dy="1568" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -19,9 +19,9 @@
         <mxCell id="ZuZDDEVdr5Cutukgd9yc-12" value="ANNOUNCEMENTS" style="shape=ext;rounded=1;html=1;whiteSpace=wrap;dashed=1;dashPattern=1 4;fillColor=none;fontFamily=Helvetica;align=left;" parent="1" vertex="1">
           <mxGeometry x="20" y="299" width="210" height="20" as="geometry"/>
         </mxCell>
-        <mxCell id="Vy_gIuBVpHLPAsXEff6K-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;fontSize=16;fontStyle=1" edge="1" parent="1" source="ZuZDDEVdr5Cutukgd9yc-14">
+        <mxCell id="Vy_gIuBVpHLPAsXEff6K-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;fontSize=14;fontColor=#00E070;fontStyle=1" edge="1" parent="1" source="ZuZDDEVdr5Cutukgd9yc-14">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="520" y="95" as="targetPoint"/>
+            <mxPoint x="520" y="103" as="targetPoint"/>
           </mxGeometry>
         </mxCell>
         <mxCell id="ZuZDDEVdr5Cutukgd9yc-14" value="Welcome (Name)&lt;br&gt;Choose your ingredients" style="shape=ext;rounded=1;html=1;whiteSpace=wrap;strokeWidth=3;fillColor=none;fontFamily=Helvetica;align=center;fontColor=#00E070;verticalAlign=top;" parent="1" vertex="1">
