@@ -1,5 +1,7 @@
 import React from 'react'; 
 import '../style.css';
+import Announcements from '../Announcements';
+import Logo from '../Logo';
 
 class StartScreen extends React.Component {
     render() {
@@ -10,13 +12,9 @@ class StartScreen extends React.Component {
                     <img className="pictures" src={require('../images/drink-1.jpg')}></img>
                     <img className="pictures" src={require('../images/drink-2.jpg')}></img>
                 </div>
-
-                <div className="logo-box">
-                    <img className="logo" src={require('../images/logo.jpg')}></img>
-                </div>
-                <div className="announcements">Announcements</div>
+                <Logo />
+                <Announcements />
             </div>
-
         );
     }
 
