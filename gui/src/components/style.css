@@ -15,6 +15,12 @@ h1{
     margin:0px;
     font-weight:700;
 }
+h2 {
+    color: forestgreen;
+    text-align: center;
+    margin:0px;
+    font-weight: 400;
+}
 
 .picture-box {
     text-align:center;
@@ -23,18 +29,18 @@ h1{
 
 .pictures {
     display: inline-block;
-    height: 60vh;
-    width: auto;
+    width: 15vw;
+    height: auto;
 }
 
 .logo-box{
     text-align:right;
 }
 
-.logo{
-    display:inline-block;
-    height:20vh;
-    width:auto;
+.logo {
+    display: inline-block;
+    width: 10vw;
+    height: auto;
 }
 
 .announcements{
@@ -49,7 +55,24 @@ h1{
 .grid-container{
     padding:10px;
     display:grid;
-    grid-gap:10px;
+}
+
+.grid-status {
+    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+.grid-logo {
+    text-align: center;
+    grid-column-start: 3;
+    grid-column-end: 3;
+}
+
+.grid-annoucements {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 
 .ingredientOne{
@@ -84,8 +107,8 @@ h1{
 }
 .fruit-pictures {
     display: inline-block;
-    height: 65px;
-    width: auto;
+    width:5vw;
+    height:auto;
 }
 
 .fruit-text {
@@ -123,3 +146,26 @@ h1{
     text-align: center;
     font-weight: 800;
 }
+
+.navigation-button {
+    display:inline-block;
+    text-align:center;
+    padding: 10px 30px;
+    width: auto;
+    border-style: solid;
+    border-width: 1px;
+    border-color: grey;
+    border-radius: 5px;
+    color: forestgreen;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+    .navigation-button:hover {
+        background-color: forestgreen;
+        color: white;
+    }
+
+    .start-navigation{
+        text-align:center;
+    }

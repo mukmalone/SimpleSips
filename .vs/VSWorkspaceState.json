@@ -2,11 +2,14 @@
   "ExpandedNodes": [
     "",
     "\\gui",
+    "\\gui\\public",
     "\\gui\\src",
+    "\\gui\\src\\actions",
     "\\gui\\src\\components",
     "\\gui\\src\\components\\images",
-    "\\gui\\src\\components\\screens"
+    "\\gui\\src\\components\\screens",
+    "\\gui\\src\\reducers"
   ],
-  "SelectedNode": "\\gui",
+  "SelectedNode": "\\gui\\src\\components\\Logo.js",
   "PreviewInSolutionExplorer": false
 }
