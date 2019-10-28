@@ -5,7 +5,7 @@ class Logo extends React.Component {
     render() {
         return (
             <div className="logo-box">
-                <img className="logo" alt="Logo" src={require('./images/logo.jpg')}></img>
+                <img className="logo" alt="Logo" src={require('./images/logo.png')}></img>
             </div>
             );
     }
