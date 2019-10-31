@@ -61,6 +61,8 @@ h2 {
     text-align: center;
     grid-column-start: 2;
     grid-column-end: 2;
+    margin:0;
+    padding:0;
 }
 
 .grid-logo {
@@ -169,3 +171,4 @@ h2 {
     .start-navigation{
         text-align:center;
     }
+

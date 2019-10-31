@@ -2,12 +2,12 @@ import { BUILD_DRINK } from '../actions/types';
 
 const INITIAL_STATE = {
     recipeTotal: 0,
-    ingredientOne: 0,
-    ingredientTwo: 0,
-    ingredientThree: 0,
-    ingredientFour: 0,
-    ingredientFive: 0,
-    ingredientSix: 0
+    ingredientOne: 0, ingredientOneName: 'Strawberry',
+    ingredientTwo: 0, ingredientTwoName: 'Kiwi',
+    ingredientThree: 0, ingredientThreeName: 'Blueberry',
+    ingredientFour: 0, ingredientFourName: 'Mango',
+    ingredientFive: 0, ingredientFiveName: 'Banna',
+    ingredientSix: 0, ingredientSixName: 'Blackberry'
 };
 
 export default (state = INITIAL_STATE, action) => {

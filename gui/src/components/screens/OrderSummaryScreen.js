@@ -4,7 +4,7 @@ import Announcements from '../Announcements';
 import Logo from '../Logo';
 import '../style.css';
 import history from '../../history';
-
+import Cup from '../Cup';
 
 class OrderSummary extends React.Component {
     previousScreen() {
@@ -16,12 +16,7 @@ class OrderSummary extends React.Component {
         return (
             <div className="body">
                 <div className="navigation-button" onClick={this.previousScreen}>Previous</div>
-                <div>Ingredient One: {this.props.ingredientOne}</div>
-                <div>Ingredient Two: {this.props.ingredientTwo}</div>
-                <div>Ingredient Three: {this.props.ingredientThree}</div>
-                <div>Ingredient Four: {this.props.ingredientFour}</div>
-                <div>Ingredient Five: {this.props.ingredientFive}</div>
-                <div>Ingredient Six: {this.props.ingredientSix}</div>
+                <Cup />
                 <div className="grid-logo">
                     <Logo />
                 </div>
