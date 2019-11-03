@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2019-11-03T20:54:50.345Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36" etag="oNr7QrTAm6CPYr4NZucY" version="12.1.9" type="github" pages="3">
+<mxfile host="www.draw.io" modified="2019-11-03T21:00:26.515Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36" etag="adSWxBa3_MQYgHci8s3I" version="12.1.9" type="github" pages="3">
   <diagram id="vnAJTbzXTNaGm4R2M7Tw" name="GUI Design">
     <mxGraphModel dx="854" dy="1568" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -181,6 +181,9 @@
         <mxCell id="dC-xkR6NNmSWckOSWks5-0" value="" style="shape=ext;rounded=1;html=1;whiteSpace=wrap;strokeWidth=3;" vertex="1" parent="1Uwp-OTT9pAQVGyGDvkQ-1">
           <mxGeometry x="20" y="20" width="240" height="360" as="geometry"/>
         </mxCell>
+        <mxCell id="FrZaJqeLtHSnl9Ay4iD--19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.05;entryY=0.473;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=14;fontColor=#000000;" edge="1" parent="1Uwp-OTT9pAQVGyGDvkQ-1" source="FrZaJqeLtHSnl9Ay4iD--1" target="FrZaJqeLtHSnl9Ay4iD--15">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
         <mxCell id="FrZaJqeLtHSnl9Ay4iD--1" value="Sign In" style="shape=ext;rounded=1;html=1;whiteSpace=wrap;dashed=1;dashPattern=1 4;" vertex="1" parent="1Uwp-OTT9pAQVGyGDvkQ-1">
           <mxGeometry x="190" y="40" width="50" height="20" as="geometry"/>
         </mxCell>
@@ -201,13 +204,16 @@
         <mxCell id="FrZaJqeLtHSnl9Ay4iD--7" value="The logo will be in big. it will be the background image of the app" style="shape=ext;rounded=1;html=1;whiteSpace=wrap;double=1;strokeColor=#000000;fontSize=14;fontColor=#000000;" vertex="1" parent="1Uwp-OTT9pAQVGyGDvkQ-1">
           <mxGeometry x="350" y="200" width="120" height="80" as="geometry"/>
         </mxCell>
-        <mxCell id="FrZaJqeLtHSnl9Ay4iD--11" value="Name:__________&lt;br&gt;&lt;br&gt;Enter the pin that is on your reusable cup" style="html=1;whiteSpace=wrap;rounded=1;strokeColor=#000000;fontSize=14;fontColor=#000000;" vertex="1" parent="1Uwp-OTT9pAQVGyGDvkQ-1">
-          <mxGeometry x="20" y="450" width="270" height="250" as="geometry"/>
+        <mxCell id="FrZaJqeLtHSnl9Ay4iD--15" value="Name:__________&lt;br&gt;&lt;br&gt;Enter the pin that is on your reusable cup" style="html=1;whiteSpace=wrap;rounded=1;strokeColor=#000000;fontSize=14;fontColor=#000000;align=left;horizontal=1;verticalAlign=top;" vertex="1" parent="1Uwp-OTT9pAQVGyGDvkQ-1">
+          <mxGeometry x="330" y="20" width="160" height="150" as="geometry"/>
         </mxCell>
-        <mxCell id="FrZaJqeLtHSnl9Ay4iD--12" value="" style="html=1;shape=plus;outlineConnect=0;" vertex="1" parent="FrZaJqeLtHSnl9Ay4iD--11">
+        <mxCell id="FrZaJqeLtHSnl9Ay4iD--16" value="" style="html=1;shape=plus;outlineConnect=0;" vertex="1" parent="FrZaJqeLtHSnl9Ay4iD--15">
           <mxGeometry x="0.5" y="1" width="14" height="14" relative="1" as="geometry">
             <mxPoint x="-7" y="-14" as="offset"/>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="FrZaJqeLtHSnl9Ay4iD--17" value="pin number here" style="shape=ext;rounded=1;html=1;whiteSpace=wrap;strokeWidth=3;fontSize=14;fontColor=#000000;align=left;" vertex="1" parent="FrZaJqeLtHSnl9Ay4iD--15">
+          <mxGeometry y="60" width="120" height="15" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
