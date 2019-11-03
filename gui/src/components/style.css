@@ -172,3 +172,34 @@ h2 {
         text-align:center;
     }
 
+.grid-container-cup {
+    display: grid;
+    margin:0px;
+}
+.cup-lid-grid {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    margin-bottom:0px;
+}
+
+.cup-lid-image {
+    display: inline-block;
+    text-align: center;
+    width: 30vw;
+    height:auto;
+}
+
+.cup-grid {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+.cup-graph {
+    display:inline-block;
+    text-align: center;
+    width: 50vw;
+    height: auto;
+    margin-top: 0px;
+}
+

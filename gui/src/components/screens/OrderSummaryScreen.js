@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import Announcements from '../Announcements';
 import Logo from '../Logo';
+import CalorieCalculator from '../CalorieCalculator';
 import '../style.css';
 import history from '../../history';
 import Cup from '../Cup';
@@ -10,13 +11,18 @@ class OrderSummary extends React.Component {
     previousScreen() {
         history.push('/builddrink');
     }
+    nextScreen() {
+        history.push('/finalizeorder');
+    }
 
     render() {
         
         return (
             <div className="body">
                 <div className="navigation-button" onClick={this.previousScreen}>Previous</div>
+                <CalorieCalculator />
                 <Cup />
+                <div className="navigation-button" onClick={this.nextScreen}>Finalize Order</div>
                 <div className="grid-logo">
                     <Logo />
                 </div>
