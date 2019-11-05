@@ -1,4 +1,5 @@
 import React from 'react';
+import './style.css'
 import { connect } from 'react-redux';
 
 class CalorieCalculator extends React.Component {
@@ -22,8 +23,8 @@ class CalorieCalculator extends React.Component {
     }
     render() {
         return (
-            <div>
-                Drink Nutrition
+            <div className="information-sign">
+                <h2>Drink Nutrition</h2>
                 <div>{this.props.i1Name}: {this.props.i1Tot * this.state.c1} calories</div>
                 <div>{this.props.i2Name}: {this.props.i2Tot * this.state.c2} calories</div>
                 <div>{this.props.i3Name}: {this.props.i3Tot * this.state.c3} calories</div>

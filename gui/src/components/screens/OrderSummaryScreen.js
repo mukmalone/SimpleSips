@@ -20,8 +20,14 @@ class OrderSummary extends React.Component {
         return (
             <div className="body">
                 <div className="navigation-button" onClick={this.previousScreen}>Previous</div>
-                <CalorieCalculator />
-                <Cup />
+                <div className="grid-container">
+                    <div className="sign-grid">
+                        <CalorieCalculator />
+                    </div>
+                    <div className="cup-grid">
+                        <Cup />
+                    </div>
+                </div>
                 <div className="navigation-button" onClick={this.nextScreen}>Finalize Order</div>
                 <div className="grid-logo">
                     <Logo />

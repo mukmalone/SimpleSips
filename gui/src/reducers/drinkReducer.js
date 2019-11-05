@@ -1,4 +1,4 @@
-import { BUILD_DRINK } from '../actions/types';
+import { BUILD_DRINK, RESET_INGREDIENTS, ORDER_DRINK } from '../actions/types';
 
 const INITIAL_STATE = {
     recipeTotal: 0,
@@ -7,11 +7,14 @@ const INITIAL_STATE = {
     ingredientThree: 0, ingredientThreeName: 'Blueberry',
     ingredientFour: 0, ingredientFourName: 'Mango',
     ingredientFive: 0, ingredientFiveName: 'Banna',
-    ingredientSix: 0, ingredientSixName: 'Blackberry'
+    ingredientSix: 0, ingredientSixName: 'Blackberry',
+    numberSmoothies: 0
 };
 
 export default (state = INITIAL_STATE, action) => {
     switch (action.type) {
+        case RESET_INGREDIENTS:
+            return INITIAL_STATE;
         case BUILD_DRINK:
             let recipeTotal = 0;
             switch (action.payload.ingredientId) {
@@ -36,6 +39,8 @@ export default (state = INITIAL_STATE, action) => {
                 default:
                     return state;
             };
+        case ORDER_DRINK:
+            return { ...state, numberSmoothies: action.payload.numberSmoothies };
         default:
             return state;
     };

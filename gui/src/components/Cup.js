@@ -40,6 +40,8 @@ class Cup extends React.Component {
                         }
                         layout={
                             {
+                                width: 300,
+                                height: 400,
                                 showlegend: 'true',
                                 legend: { "orientation": "h" },
                                 margin: { l: 0, r: 0, t: 0, b: 0 },

@@ -1,10 +1,16 @@
 import React from 'react'; 
+import { connect } from 'react-redux';
 import '../style.css';
 import Announcements from '../Announcements';
+import { resetIngredients } from '../../actions';
 import Logo from '../Logo';
 import history from '../../history';
 
 class StartScreen extends React.Component {
+    componentDidMount() {
+        this.props.resetIngredients();
+    }
+
     nextScreen() {
         history.push('/builddrink');
     }
@@ -31,4 +37,4 @@ class StartScreen extends React.Component {
 
 }
 
-export default StartScreen;
+export default connect(null, { resetIngredients })(StartScreen);
