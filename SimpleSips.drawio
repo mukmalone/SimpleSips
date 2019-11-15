@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2019-11-08T02:09:05.932Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36" etag="CqhCnuT9c-1fDTEnM0Qj" version="12.2.2" type="github" pages="3">
+<mxfile host="www.draw.io" modified="2019-11-15T02:00:14.071Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36" etag="Ab0VkVSL5MiQcHQVfvD9" version="12.2.6" type="github" pages="4">
   <diagram id="vnAJTbzXTNaGm4R2M7Tw" name="GUI Design">
     <mxGraphModel dx="1094" dy="1536" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -270,7 +270,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="PCz0cka9WuT_1HynQPXI" name="Software Design">
-    <mxGraphModel dx="854" dy="468" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1094" dy="436" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="17n05s_DPcVjZOHsSFnq-0"/>
         <mxCell id="17n05s_DPcVjZOHsSFnq-1" parent="17n05s_DPcVjZOHsSFnq-0"/>
@@ -424,6 +424,56 @@
         </mxCell>
         <mxCell id="1VMfTobg3W5r3iQEiY3T-7" value="Ideas:&lt;br&gt;&lt;ul&gt;&lt;li&gt;Name the drink&lt;/li&gt;&lt;li&gt;Drink combination ownership (ie be the first to try a combination)&lt;/li&gt;&lt;li&gt;Who owns the most popular drink?&lt;/li&gt;&lt;li&gt;Send a drink to a friend&lt;/li&gt;&lt;li&gt;Go full blockchain model on testnet and do all storage on the testnet.&amp;nbsp; This solves all the issues of logging in and storage.&amp;nbsp; It would be governed by a smart contract.&amp;nbsp; You would be able to view data from any app.&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;Issues:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Where does the suggestion get displayed?&lt;/li&gt;&lt;li&gt;If on the GUI how do you login?&lt;/li&gt;&lt;li&gt;&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="17n05s_DPcVjZOHsSFnq-1" vertex="1">
           <mxGeometry x="10" y="950" width="330" height="20" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="2QK7Bf7rLwREHNNTrZpE" name="Payment Flow">
+    <mxGraphModel dx="1094" dy="436" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="J7xBBTQee8VHd2HFGbpb-0"/>
+        <mxCell id="J7xBBTQee8VHd2HFGbpb-1" parent="J7xBBTQee8VHd2HFGbpb-0"/>
+        <mxCell id="J7xBBTQee8VHd2HFGbpb-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="J7xBBTQee8VHd2HFGbpb-1" source="J7xBBTQee8VHd2HFGbpb-2" target="J7xBBTQee8VHd2HFGbpb-3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="J7xBBTQee8VHd2HFGbpb-2" value="Scan cup on GUI" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="J7xBBTQee8VHd2HFGbpb-1">
+          <mxGeometry x="50" y="70" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="J7xBBTQee8VHd2HFGbpb-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="J7xBBTQee8VHd2HFGbpb-1" source="J7xBBTQee8VHd2HFGbpb-3" target="J7xBBTQee8VHd2HFGbpb-5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="J7xBBTQee8VHd2HFGbpb-3" value="Build drink" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="J7xBBTQee8VHd2HFGbpb-1">
+          <mxGeometry x="250" y="70" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="J7xBBTQee8VHd2HFGbpb-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="J7xBBTQee8VHd2HFGbpb-1" source="J7xBBTQee8VHd2HFGbpb-5" target="J7xBBTQee8VHd2HFGbpb-7">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="J7xBBTQee8VHd2HFGbpb-5" value="Select Number of drinks" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="J7xBBTQee8VHd2HFGbpb-1">
+          <mxGeometry x="450" y="70" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="J7xBBTQee8VHd2HFGbpb-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="J7xBBTQee8VHd2HFGbpb-1" source="J7xBBTQee8VHd2HFGbpb-7" target="J7xBBTQee8VHd2HFGbpb-9">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="J7xBBTQee8VHd2HFGbpb-7" value="Press pay" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="J7xBBTQee8VHd2HFGbpb-1">
+          <mxGeometry x="650" y="70" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="J7xBBTQee8VHd2HFGbpb-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="J7xBBTQee8VHd2HFGbpb-1" source="J7xBBTQee8VHd2HFGbpb-9" target="J7xBBTQee8VHd2HFGbpb-15">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="J7xBBTQee8VHd2HFGbpb-9" value="Send transaction" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="J7xBBTQee8VHd2HFGbpb-1">
+          <mxGeometry x="650" y="210" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="J7xBBTQee8VHd2HFGbpb-15" value="Confirm transaction on GUI" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="J7xBBTQee8VHd2HFGbpb-1">
+          <mxGeometry x="450" y="210" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="J7xBBTQee8VHd2HFGbpb-11" value="Store public key of user from cup&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="J7xBBTQee8VHd2HFGbpb-1">
+          <mxGeometry x="50" y="140" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="J7xBBTQee8VHd2HFGbpb-13" value="GUI will require it&#39;s own metamask address and ether for this POC" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="J7xBBTQee8VHd2HFGbpb-1">
+          <mxGeometry x="160" y="20" width="540" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="J7xBBTQee8VHd2HFGbpb-14" value="Transaction will contain:&lt;br&gt;User public key&lt;br&gt;drink mix" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="J7xBBTQee8VHd2HFGbpb-1">
+          <mxGeometry x="630" y="290" width="150" height="80" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
