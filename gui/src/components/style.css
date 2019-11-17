@@ -33,6 +33,14 @@ h2 {
     height: auto;
 }
 
+.qrreader {
+    display: inline-block;
+    text-align: center;
+    margin:0px;
+    width: 100vw;
+    height: auto;
+}
+
 .logo-box{
     text-align:right;
 }
@@ -89,23 +97,23 @@ h2 {
 }
 .ingredientThree {
     text-align: center;
-    grid-column-start: 1;
-    grid-column-end: 1;
+    grid-column-start: 3;
+    grid-column-end: 3;
 }
 .ingredientFour {
     text-align: center;
-    grid-column-start: 2;
-    grid-column-end: 2;
-}
-.ingredientFive {
-    text-align: center;
     grid-column-start: 1;
     grid-column-end: 1;
 }
-.ingredientSix {
+.ingredientFive {
     text-align: center;
     grid-column-start: 2;
     grid-column-end: 2;
+}
+.ingredientSix {
+    text-align: center;
+    grid-column-start: 3;
+    grid-column-end: 3;
 }
 .fruit-pictures {
     display: inline-block;

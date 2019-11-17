@@ -26,9 +26,9 @@ class IngredientControl extends React.Component {
                 <div className="fruit-text">{this.props.id}</div>
                 <img className="fruit-pictures" alt={this.props.id} src={this.props.src}></img>
                 <div>
-                    <div className="ingredient-control" onClick={this.incrementIngredient}>+</div>
-                    <div className="ingredient-control-text">{this.props.ingredientTotal}</div>
                     <div className="ingredient-control" onClick={this.decrementIngredient}>-</div>
+                    <div className="ingredient-control-text">{this.props.ingredientTotal}</div>
+                    <div className="ingredient-control" onClick={this.incrementIngredient}>+</div>
                 </div>
             </div>
         );

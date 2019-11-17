@@ -1,5 +1,5 @@
 //Action creator
-import { BUILD_DRINK, RESET_INGREDIENTS, ORDER_DRINK } from './types';
+import { BUILD_DRINK, RESET_INGREDIENTS, ORDER_DRINK, SCAN_QRCODE, SCANED_QRCODE } from './types';
 
 export const buildDrink = (ingredientId, ingredientAmount) => {
     return {
@@ -19,4 +19,17 @@ export const orderDrink = (numberSmoothies) => {
         type: ORDER_DRINK,
         payload: { numberSmoothies: numberSmoothies }
     }
+}
+
+export const scanQRCode = () => {
+    return {
+        type: SCAN_QRCODE
+    };
+}
+
+export const scanedQRCode = (userID) => {
+    return {
+        type: SCANED_QRCODE,
+        payload: { userID: userID }
+    };
 }

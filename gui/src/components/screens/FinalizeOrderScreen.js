@@ -8,7 +8,7 @@ import '../style.css';
 import Cup from '../Cup';
 
 class FinalizeOrderScreen extends React.Component {
-    state = { numberSmoothies: 0 };
+    state = { numberSmoothies: 1 };
     incrementSmoothies = () => {
         let result = this.state.numberSmoothies + 1;
         this.setState({ numberSmoothies: result });
@@ -35,9 +35,9 @@ class FinalizeOrderScreen extends React.Component {
                 <div>Finalize Order</div>
                 <Cup />
                 <div>
-                    <div className="ingredient-control" onClick={this.incrementSmoothies}>+</div>
-                    <div className="ingredient-control-text">{this.state.numberSmoothies}</div>
                     <div className="ingredient-control" onClick={this.decrementSmoothies}>-</div>
+                    <div className="ingredient-control-text">{this.state.numberSmoothies}</div>
+                    <div className="ingredient-control" onClick={this.incrementSmoothies}>+</div>
                 </div>
                 <div className="navigation-button" onClick={this.nextScreen}>Pay</div>
                 <div className="grid-logo">

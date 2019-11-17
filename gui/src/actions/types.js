@@ -1,3 +1,5 @@
 export const BUILD_DRINK = 'BUILD_DRINK';
 export const RESET_INGREDIENTS = 'RESET_INGREDIENTS';
 export const ORDER_DRINK = 'ORDER_DRINK';
+export const SCAN_QRCODE = 'SCAN_QRCODE';
+export const SCANED_QRCODE = 'SCANED_QRCODE';

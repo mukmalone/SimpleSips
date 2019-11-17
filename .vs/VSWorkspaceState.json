@@ -6,10 +6,10 @@
     "\\gui\\src",
     "\\gui\\src\\actions",
     "\\gui\\src\\components",
-    "\\gui\\src\\components\\images",
+    "\\gui\\src\\components\\Contract",
     "\\gui\\src\\components\\screens",
     "\\gui\\src\\reducers"
   ],
-  "SelectedNode": "\\gui\\src\\components\\App.js",
+  "SelectedNode": "\\gui\\src\\reducers\\scanQRCode.js",
   "PreviewInSolutionExplorer": false
 }

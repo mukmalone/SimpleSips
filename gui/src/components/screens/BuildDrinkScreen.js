@@ -27,8 +27,8 @@ class BuildDrinkScreen extends React.Component {
         return (
             <div className="body">
                 <div className="navigation-button" onClick={this.previousScreen}>Previous</div>
-                <h1>Welcome (name)!</h1>
-                <h1>Choose your ingredients</h1>
+                <h2>Welcome {this.props.userID}!</h2>
+                <h2>Choose your ingredients</h2>
                 <div className="grid-container">
                     <IngredientControl class="ingredientOne" src={require('../images/strawberry.jpg')} id={`${this.props.i1Name}`} />
                     <IngredientControl class="ingredientTwo" src={require('../images/kiwi.jpg')} id={`${this.props.i2Name}`} />
@@ -56,6 +56,7 @@ class BuildDrinkScreen extends React.Component {
 const mapStateToProps = state => {
     return (
         {
+            userID: state.user.userID,
             recipeTotal: state.drink.recipeTotal,
             i1Name: state.drink.ingredientOneName,
             i2Name: state.drink.ingredientTwoName,
@@ -63,12 +64,8 @@ const mapStateToProps = state => {
             i4Name: state.drink.ingredientFourName,
             i5Name: state.drink.ingredientFiveName,
             i6Name: state.drink.ingredientSixName
-
-
         }
-
-    );
-    
+    );  
 }
 
 export default connect(mapStateToProps, {})(BuildDrinkScreen);

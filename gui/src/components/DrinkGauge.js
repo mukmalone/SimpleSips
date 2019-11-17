@@ -13,7 +13,7 @@ class DrinkGauge extends React.Component {
                             value: `${this.props.recipeTotal}`,
                             type: "indicator",
                             mode: "gauge+number",
-                            delta: { reference: 40 },
+                            delta: { reference: 60 },
                             gauge: { axis: { range: [null, 100] } }
                         }
                     ]}
