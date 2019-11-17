@@ -27,7 +27,7 @@ class BuildDrinkScreen extends React.Component {
         return (
             <div className="body">
                 <div className="navigation-button" onClick={this.previousScreen}>Previous</div>
-                <h2>Welcome {this.props.userID}!</h2>
+                <h2>Welcome {this.props.userName}!</h2>
                 <h2>Choose your ingredients</h2>
                 <div className="grid-container">
                     <IngredientControl class="ingredientOne" src={require('../images/strawberry.jpg')} id={`${this.props.i1Name}`} />
@@ -35,7 +35,7 @@ class BuildDrinkScreen extends React.Component {
                     <IngredientControl class="ingredientThree" src={require('../images/blueberry.jpg')} id={`${this.props.i3Name}`} />
                     <IngredientControl class="ingredientFour" src={require('../images/mango.jpg')} id={`${this.props.i4Name}`} />
                     <IngredientControl class="ingredientFive" src={require('../images/banna.jpg')} id={`${this.props.i5Name}`} />
-                    <IngredientControl class="ingredientSix" src={require('../images/grapes.jpg')} id={`${this.props.i6Name}`} />
+                    <IngredientControl class="ingredientSix" src={require('../images/blackberry.jpg')} id={`${this.props.i6Name}`} />
                 </div>
                 <div className="grid-container">
                     <div className="grid-status gauge">
@@ -57,6 +57,7 @@ const mapStateToProps = state => {
     return (
         {
             userID: state.user.userID,
+            userName: state.user.userName,
             recipeTotal: state.drink.recipeTotal,
             i1Name: state.drink.ingredientOneName,
             i2Name: state.drink.ingredientTwoName,

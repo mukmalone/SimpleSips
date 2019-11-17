@@ -27,9 +27,9 @@ export const scanQRCode = () => {
     };
 }
 
-export const scanedQRCode = (userID) => {
+export const scanedQRCode = (userID, userName) => {
     return {
         type: SCANED_QRCODE,
-        payload: { userID: userID }
+        payload: { userID: userID, userName: userName }
     };
 }

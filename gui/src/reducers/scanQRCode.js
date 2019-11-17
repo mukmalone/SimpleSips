@@ -14,9 +14,10 @@ export default (state = INITIAL_STATE, action) => {
                 enableCamera: 1
             };
         case SCANED_QRCODE:
-            return {
+            return {...state,
                 enableCamera: 0,
-                userID: action.payload.userID.replace("ethereum:", "")
+                userID: action.payload.userID,
+                userName: action.payload.userName
             };
         case RESET_INGREDIENTS:
             return INITIAL_STATE;

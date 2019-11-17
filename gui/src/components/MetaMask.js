@@ -42,7 +42,7 @@ class MetaMask extends React.Component {
         //this.validateMetaMask();
         //this.sendTransaction();
         this.connectBlockchain();
-        //this.buyDrink();
+        this.buyDrink();
     }
 
     render() {

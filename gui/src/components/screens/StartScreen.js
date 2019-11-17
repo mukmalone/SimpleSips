@@ -2,10 +2,9 @@ import React from 'react';
 import { connect } from 'react-redux';
 import '../style.css';
 import Announcements from '../Announcements';
-import { resetIngredients, scanQRCode } from '../../actions';
+import { resetIngredients, scanQRCode, scanedQRCode } from '../../actions';
 import Logo from '../Logo';
 import history from '../../history';
-import QRReader from '../QRReader';
 
 class StartScreen extends React.Component {
 
@@ -15,6 +14,18 @@ class StartScreen extends React.Component {
 
     nextScreen() {
         history.push('/builddrink');
+    }
+
+    chooseAccount1 = () => {
+        this.props.scanedQRCode("0xBC0B51c0AFB3Ec48E36863B15ee6C75683788e00","Rosa")
+    }
+
+    chooseAccount2 = () => {
+        this.props.scanedQRCode("0xa6ff2A92F593292Ce300e854c559922360FD2c1D","Simona")
+    }
+
+    chooseAccount3 = () => {
+        this.props.scanedQRCode("0xBC0B51c0AFB3Ec48E36863B15ee6C75683788e00","Mike")
     }
 
     renderCamera = () => {
@@ -28,7 +39,9 @@ class StartScreen extends React.Component {
         } else {
             return (
                 <div className="picture-box">
-                    <QRReader />
+                    <div className="navigation-button" onClick={this.chooseAccount1} id="1">Rosa</div>
+                    <div className="navigation-button" onClick={this.chooseAccount2} id="2">Simona</div>
+                    <div className="navigation-button" onClick={this.chooseAccount3} id="3">Mike</div>
                 </div>
                 )
         }
@@ -44,7 +57,7 @@ class StartScreen extends React.Component {
         } else {
             return (
                 <div>
-                    <h2>{this.props.userID}, let's build your drink!</h2>
+                    <h2>{this.props.userName}, let's build your drink!</h2>
                     <div className="start-navigation">
                         <div className="navigation-button" onClick={this.nextScreen}>Next</div>
                     </div>
@@ -75,9 +88,10 @@ const mapStateToProps = state => {
     return (
         {
             enableCamera: state.user.enableCamera,
-            userID: state.user.userID
+            userID: state.user.userID,
+            userName: state.user.userName
         }
     );
 }
 
-export default connect(mapStateToProps, { resetIngredients, scanQRCode })(StartScreen);
+export default connect(mapStateToProps, { resetIngredients, scanQRCode, scanedQRCode })(StartScreen);
