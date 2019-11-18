@@ -1,9 +1,11 @@
-import { SCAN_QRCODE, SCANED_QRCODE, RESET_INGREDIENTS } from '../actions/types';
+import { SCAN_QRCODE, SCANED_QRCODE, RESET_INGREDIENTS, GET_NUMDRINKPASSES } from '../actions/types';
+
 
 const INITIAL_STATE = {
     enableCamera: 0,
     userID: '',
-    userName: ''
+    userName: '',
+    numDrinkPasses: 0
 };
 
 export default (state = INITIAL_STATE, action) => {
@@ -19,9 +21,15 @@ export default (state = INITIAL_STATE, action) => {
                 userID: action.payload.userID,
                 userName: action.payload.userName
             };
+        case GET_NUMDRINKPASSES:
+            return {
+                ...state,
+                numDrinkPasses: action.payload.numDrinkPasses
+            };
         case RESET_INGREDIENTS:
             return INITIAL_STATE;
         default:
             return state;
     };
 };
+

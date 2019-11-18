@@ -2,11 +2,24 @@ import React from 'react';
 import { connect } from 'react-redux';
 import '../style.css';
 import Announcements from '../Announcements';
-import { resetIngredients, scanQRCode, scanedQRCode } from '../../actions';
+import { resetIngredients, scanQRCode, scanedQRCode, get_numDrinkPasses } from '../../actions';
 import Logo from '../Logo';
 import history from '../../history';
+import Web3 from 'web3';
+import { SimpleSips_Address, SimpleSips_Contract } from '../Contract/SimpleSips';
 
 class StartScreen extends React.Component {
+
+    getNumDrinkPasses = async (userID, props) => {
+        const web3 = new Web3(Web3.givenProvider || "http://localhost:8545")
+        const accounts = await web3.eth.getAccounts()
+        const simpleSips = new web3.eth.Contract(SimpleSips_Contract, SimpleSips_Address)
+        const result = await simpleSips.methods.numDrinkPasses(userID).call({ from: accounts[0] }).then(
+            function (result) {
+                props.get_numDrinkPasses(result*1);
+            });
+    };
+
 
     componentDidMount() {
         this.props.resetIngredients();
@@ -17,17 +30,20 @@ class StartScreen extends React.Component {
     }
 
     chooseAccount1 = () => {
-        this.props.scanedQRCode("0xBC0B51c0AFB3Ec48E36863B15ee6C75683788e00","Rosa")
+        this.props.scanedQRCode("0xBC0B51c0AFB3Ec48E36863B15ee6C75683788e00", "Rosa")
+        this.getNumDrinkPasses("0xBC0B51c0AFB3Ec48E36863B15ee6C75683788e00", this.props);
     }
 
     chooseAccount2 = () => {
-        this.props.scanedQRCode("0xa6ff2A92F593292Ce300e854c559922360FD2c1D","Simona")
+        this.props.scanedQRCode("0xa6ff2A92F593292Ce300e854c559922360FD2c1D", "Simona")
+        this.getNumDrinkPasses("0xa6ff2A92F593292Ce300e854c559922360FD2c1D", this.props);
     }
 
     chooseAccount3 = () => {
-        this.props.scanedQRCode("0xBC0B51c0AFB3Ec48E36863B15ee6C75683788e00","Mike")
+        this.props.scanedQRCode("0xBC0B51c0AFB3Ec48E36863B15ee6C75683788e00", "Mike")
+        this.getNumDrinkPasses("0xBC0B51c0AFB3Ec48E36863B15ee6C75683788e00", this.props);
     }
-
+    
     renderCamera = () => {
         if (this.props.enableCamera === 0) {
             return (
@@ -57,7 +73,7 @@ class StartScreen extends React.Component {
         } else {
             return (
                 <div>
-                    <h2>{this.props.userName}, let's build your drink!</h2>
+                    <h2>{this.props.userName}, you have {this.props.numDrinkPasses} left, let's build your drink!</h2>
                     <div className="start-navigation">
                         <div className="navigation-button" onClick={this.nextScreen}>Next</div>
                     </div>
@@ -89,9 +105,10 @@ const mapStateToProps = state => {
         {
             enableCamera: state.user.enableCamera,
             userID: state.user.userID,
-            userName: state.user.userName
+            userName: state.user.userName,
+            numDrinkPasses: state.user.numDrinkPasses
         }
     );
 }
 
-export default connect(mapStateToProps, { resetIngredients, scanQRCode, scanedQRCode })(StartScreen);
+export default connect(mapStateToProps, { resetIngredients, scanQRCode, scanedQRCode, get_numDrinkPasses })(StartScreen);
