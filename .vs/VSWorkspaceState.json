@@ -10,6 +10,6 @@
     "\\gui\\src\\components\\screens",
     "\\gui\\src\\reducers"
   ],
-  "SelectedNode": "\\gui",
+  "SelectedNode": "\\gui\\src\\components\\screens\\FinalizeOrderScreen.js",
   "PreviewInSolutionExplorer": false
 }

@@ -34,8 +34,8 @@ class StartScreen extends React.Component {
     }
 
     chooseAccount1 = () => {
-        this.props.scanedQRCode("0xBC0B51c0AFB3Ec48E36863B15ee6C75683788e00", "Rosa")
-        this.getNumDrinkPasses("0xBC0B51c0AFB3Ec48E36863B15ee6C75683788e00", this.props);
+        this.props.scanedQRCode("0xa6ff2A92F593292Ce300e854c559922360FD2c1D", "Rosa")
+        this.getNumDrinkPasses("0xa6ff2A92F593292Ce300e854c559922360FD2c1D", this.props);
     }
 
     chooseAccount2 = () => {
