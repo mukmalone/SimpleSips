@@ -33,7 +33,7 @@ class FinalizeOrderScreen extends React.Component {
         this.setState({ account: accounts[0] })
         const simpleSips = new web3.eth.Contract(SimpleSips_Contract, SimpleSips_Address)
         this.setState({ simpleSips })
-        const buyDrink = await simpleSips.methods.buyDrink(this.props.userID, this.state.numberSmoothies, Date.now(), `${this.props.i1}`, `${this.props.i2}`, `${this.props.i3}`, `${this.props.i4}`, `${this.props.i5}`, `${this.props.i6}`).send({ from: this.state.account });
+        const buyDrink = await simpleSips.methods.buyDrink(this.props.userID, this.state.numberSmoothies, Date.now(), `${this.props.i1}`, `${this.props.i2}`, `${this.props.i3}`, `${this.props.i4}`, `${this.props.i5}`, `${this.props.i6}`).send({ from: this.state.account, gasPrice: '400000000000' });
         this.nextScreen();
     }
 

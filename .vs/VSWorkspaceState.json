@@ -10,6 +10,6 @@
     "\\gui\\src\\components\\screens",
     "\\gui\\src\\reducers"
   ],
-  "SelectedNode": "\\gui\\src\\reducers\\scanQRCode.js",
+  "SelectedNode": "\\gui",
   "PreviewInSolutionExplorer": false
 }

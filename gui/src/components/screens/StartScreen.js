@@ -29,6 +29,10 @@ class StartScreen extends React.Component {
         history.push('/builddrink');
     }
 
+    previousScreen= () => {
+        this.props.resetIngredients();
+    }
+
     chooseAccount1 = () => {
         this.props.scanedQRCode("0xBC0B51c0AFB3Ec48E36863B15ee6C75683788e00", "Rosa")
         this.getNumDrinkPasses("0xBC0B51c0AFB3Ec48E36863B15ee6C75683788e00", this.props);
@@ -70,6 +74,15 @@ class StartScreen extends React.Component {
                     <div className="navigation-button" onClick={this.props.scanQRCode}>Scan Cup</div>
                 </div>
             )
+        } else if (this.props.numDrinkPasses === 0) {
+            return (
+                <div>
+                    <h2>{this.props.userName}, you only have {this.props.numDrinkPasses} left, please purchase more!</h2>
+                    <div className="start-navigation">
+                        <div className="navigation-button" onClick={this.previousScreen}>Previous</div>
+                    </div>
+                </div>
+            );
         } else {
             return (
                 <div>
