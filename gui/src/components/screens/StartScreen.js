@@ -58,7 +58,7 @@ class StartScreen extends React.Component {
             )
         } else {
             return (
-                <div className="picture-box">
+                <div className="picture-box-user">
                     <div className="navigation-button" onClick={this.chooseAccount1} id="1">Rosa</div>
                     <div className="navigation-button" onClick={this.chooseAccount2} id="2">Simona</div>
                     <div className="navigation-button" onClick={this.chooseAccount3} id="3">Mike</div>

@@ -13,7 +13,9 @@ class FinalizeOrderScreen extends React.Component {
     state = { numberSmoothies: 1 };
     incrementSmoothies = () => {
         let result = this.state.numberSmoothies + 1;
-        this.setState({ numberSmoothies: result });
+        if (this.state.numberSmoothies < this.props.numDrinkPasses) {
+            this.setState({ numberSmoothies: result });
+        }
     }
 
     decrementSmoothies = () => {
@@ -44,16 +46,22 @@ class FinalizeOrderScreen extends React.Component {
     }
     render() {
         return (
-            <div>
+            <div className="body">
                 <div className="navigation-button" onClick={this.previousScreen}>Previous</div>
-                <div>Finalize Order</div>
-                <Cup />
-                <div>
-                    <div className="ingredient-control" onClick={this.decrementSmoothies}>-</div>
-                    <div className="ingredient-control-text">{this.state.numberSmoothies}</div>
-                    <div className="ingredient-control" onClick={this.incrementSmoothies}>+</div>
+                <div className="grid-container">
+                    <div className="cup-grid">
+                        <Cup />
+                    </div>
+                    <div className="sign-grid">
+                        <h2>You have a credit of {this.props.numDrinkPasses} smoothies you can use</h2>
+                        <div className="ingredient-control" onClick={this.decrementSmoothies}>-</div>
+                        <div className="ingredient-control-text">{this.state.numberSmoothies}</div>
+                        <div className="ingredient-control" onClick={this.incrementSmoothies}>+</div>
+                        <br />
+                        <br />
+                        <div className="navigation-button" onClick={this.pay}>Pay</div>
+                    </div>
                 </div>
-                <div className="navigation-button" onClick={this.pay}>Pay</div>
                 <div className="grid-logo">
                     <Logo />
                 </div>
@@ -68,6 +76,7 @@ class FinalizeOrderScreen extends React.Component {
 const mapStateToProps = state => {
     return {
         userID: state.user.userID,
+        numDrinkPasses: state.user.numDrinkPasses,
         i1: state.drink.ingredientOne/10,
         i2: state.drink.ingredientTwo/10,
         i3: state.drink.ingredientThree/10,

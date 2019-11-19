@@ -20,7 +20,7 @@ class OrderCompleteScreen extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="body">
                 {this.renderConent()}
                 <h2>Cool facts on fruits/smoothies</h2>
                 <div className="picture-box">

@@ -23,12 +23,15 @@ class OrderSummary extends React.Component {
                 <div className="grid-container">
                     <div className="sign-grid">
                         <CalorieCalculator />
+                        <div className="finalize-grid">
+                            <div className="navigation-button" onClick={this.nextScreen}>Finalize Order</div>
+                        </div>
                     </div>
                     <div className="cup-grid">
                         <Cup />
                     </div>
                 </div>
-                <div className="navigation-button" onClick={this.nextScreen}>Finalize Order</div>
+                
                 <div className="grid-logo">
                     <Logo />
                 </div>

@@ -17,7 +17,7 @@ class DrinkGauge extends React.Component {
                             gauge: { axis: { range: [null, 100] } }
                         }
                     ]}
-                    layout={{ margin: { l: 0, r:0, t:0, b:0 }, width: 300, height: 300 }}
+                    layout={{ margin: { l: 0, r:0, t:0, b:0 }, width: 170, height: 170 }}
             />
             </div>
         );
