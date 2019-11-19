@@ -4,8 +4,8 @@
     border-color: grey;
     border-radius: 5px;
     padding:10px;
-    width:2000px;
-    height:1300px;
+    width:980px;
+    height:660px;
     margin-bottom:0px;
 }
 
@@ -24,12 +24,12 @@ h2 {
 
 .picture-box {
     text-align:center;
-    padding:50px;
+    padding:40px;
 }
 
 .pictures {
     display: inline-block;
-    width: 15vw;
+    width: 220px;
     height: auto;
 }
 

@@ -101,9 +101,6 @@ class StartScreen extends React.Component {
                 <h1>Place your cup on the right to get started!</h1>
                 {this.renderCamera()}
                 {this.renderButton()}
-                width: {window.innerWidth}
-                <br></br>
-                height: {window.innerHeight}
                 <div className="grid-logo">
                     <Logo />
                 </div>
