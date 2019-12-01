@@ -8,6 +8,7 @@ import FinalizeOrderScreen from './screens/FinalizeOrderScreen';
 import OrderCompleteScreen from './screens/OrderCompleteScreen';
 import QRReader from './QRReader';
 import MetaMask from './MetaMask'
+import RecommendationScreen from './screens/RecommendationScreen';
 
 class App extends React.Component {
     render() {
@@ -22,6 +23,7 @@ class App extends React.Component {
                         <Route path="/orderComplete" exact component={OrderCompleteScreen} />
                         <Route path="/metaMask" exact component={MetaMask} />
                         <Route path="/qrreader" exact component={QRReader} />
+                        <Route path="/recommendation" exact component={RecommendationScreen} />
                     </Switch>
                 </Router>
             </div>

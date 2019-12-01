@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import '../style.css';
 import Announcements from '../Announcements';
-import { resetIngredients, scanQRCode, scanedQRCode, get_numDrinkPasses } from '../../actions';
+import { resetIngredients, scanQRCode, scanedQRCode, getnumDrinkPasses } from '../../actions';
 import Logo from '../Logo';
 import history from '../../history';
 import Web3 from 'web3';
@@ -14,9 +14,9 @@ class StartScreen extends React.Component {
         const web3 = new Web3(Web3.givenProvider || "http://localhost:8545")
         const accounts = await web3.eth.getAccounts()
         const simpleSips = new web3.eth.Contract(SimpleSips_Contract, SimpleSips_Address)
-        const result = await simpleSips.methods.numDrinkPasses(userID).call({ from: accounts[0] }).then(
+        await simpleSips.methods.numDrinkPasses(userID).call({ from: accounts[0] }).then(
             function (result) {
-                props.get_numDrinkPasses(result*1);
+                props.getnumDrinkPasses(result*1);
             });
     };
 
@@ -124,4 +124,4 @@ const mapStateToProps = state => {
     );
 }
 
-export default connect(mapStateToProps, { resetIngredients, scanQRCode, scanedQRCode, get_numDrinkPasses })(StartScreen);
+export default connect(mapStateToProps, { resetIngredients, scanQRCode, scanedQRCode, getnumDrinkPasses })(StartScreen);

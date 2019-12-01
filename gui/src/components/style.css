@@ -179,6 +179,26 @@ h2 {
     font-weight: 800;
 }
 
+.navigation-button-right {
+    display: inline-block;
+    margin-left:530px;
+    text-align: center;
+    padding: 10px 30px;
+    width: auto;
+    border-style: solid;
+    border-width: 3px;
+    border-color: forestgreen;
+    border-radius: 15px;
+    color: forestgreen;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.navigation-button-right:hover {
+    background-color: forestgreen;
+    color: white;
+}
+
     .navigation-button:hover {
         background-color: forestgreen;
         color: white;
@@ -246,3 +266,46 @@ h2 {
     text-align: center;
 }
 
+.button-rec-grid {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    margin-top: 50px;
+    margin-bottom:50px;
+}
+
+.ingredientOneRec {
+    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+.ingredientTwoRec {
+    text-align: center;
+    grid-column-start: 3;
+    grid-column-end: 3;
+}
+
+.ingredientThreeRec {
+    text-align: center;
+    grid-column-start: 4;
+    grid-column-end: 4;
+}
+
+.ingredientFourRec {
+    text-align: center;
+    grid-column-start: 5;
+    grid-column-end: 5;
+}
+
+.ingredientFiveRec {
+    text-align: center;
+    grid-column-start: 6;
+    grid-column-end: 6;
+}
+
+.ingredientSixRec {
+    text-align: center;
+    grid-column-start: 7;
+    grid-column-end: 7;
+}

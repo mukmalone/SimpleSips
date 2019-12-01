@@ -10,7 +10,8 @@ import Web3 from 'web3';
 import { SimpleSips_Address, SimpleSips_Contract } from '../Contract/SimpleSips';
 
 class FinalizeOrderScreen extends React.Component {
-    state = { numberSmoothies: 1 };
+
+    state = { numberSmoothies: 1, processing: 0 };
     incrementSmoothies = () => {
         let result = this.state.numberSmoothies + 1;
         if (this.state.numberSmoothies < this.props.numDrinkPasses) {
@@ -30,12 +31,13 @@ class FinalizeOrderScreen extends React.Component {
     }
 
     pay = async () => {
+        this.setState({ processing: 1 });
         const web3 = new Web3(Web3.givenProvider || "http://localhost:8545")
         const accounts = await web3.eth.getAccounts()
         this.setState({ account: accounts[0] })
         const simpleSips = new web3.eth.Contract(SimpleSips_Contract, SimpleSips_Address)
         this.setState({ simpleSips })
-        const buyDrink = await simpleSips.methods.buyDrink(this.props.userID, this.state.numberSmoothies, Date.now(), `${this.props.i1}`, `${this.props.i2}`, `${this.props.i3}`, `${this.props.i4}`, `${this.props.i5}`, `${this.props.i6}`).send({ from: this.state.account, gasPrice: '400000000000' });
+        await simpleSips.methods.buyDrink(this.props.userID, this.state.numberSmoothies, Date.now(), `${this.props.i1}`, `${this.props.i2}`, `${this.props.i3}`, `${this.props.i4}`, `${this.props.i5}`, `${this.props.i6}`).send({ from: this.state.account, gasPrice: '4000000000' });
         this.nextScreen();
     }
 
@@ -43,6 +45,28 @@ class FinalizeOrderScreen extends React.Component {
     nextScreen = () => {
         this.props.orderDrink(this.state.numberSmoothies);
         history.push('/ordercomplete');
+    }
+
+    renderPayment = () => {
+        if (this.state.processing === 0) {
+            return (
+                <div className="sign-grid">
+                    <h2>You have a credit of {this.props.numDrinkPasses} smoothies you can use</h2>
+                    <div className="ingredient-control" onClick={this.decrementSmoothies}>-</div>
+                    <div className="ingredient-control-text">{this.state.numberSmoothies}</div>
+                    <div className="ingredient-control" onClick={this.incrementSmoothies}>+</div>
+                    <br />
+                    <br />
+                    <div className="navigation-button" onClick={this.pay}>Pay</div>
+                </div>
+            );
+        } else if (this.state.processing === 1) {
+            return (
+                <div className="sign-grid">
+                    <h1>Processing....</h1>
+                </div>
+            );
+        } 
     }
     render() {
         return (
@@ -52,15 +76,7 @@ class FinalizeOrderScreen extends React.Component {
                     <div className="cup-grid">
                         <Cup />
                     </div>
-                    <div className="sign-grid">
-                        <h2>You have a credit of {this.props.numDrinkPasses} smoothies you can use</h2>
-                        <div className="ingredient-control" onClick={this.decrementSmoothies}>-</div>
-                        <div className="ingredient-control-text">{this.state.numberSmoothies}</div>
-                        <div className="ingredient-control" onClick={this.incrementSmoothies}>+</div>
-                        <br />
-                        <br />
-                        <div className="navigation-button" onClick={this.pay}>Pay</div>
-                    </div>
+                    {this.renderPayment()}
                 </div>
                 <div className="grid-logo">
                     <Logo />

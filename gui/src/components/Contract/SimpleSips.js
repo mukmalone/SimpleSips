@@ -1,4 +1,5 @@
 export const SimpleSips_Address = '0x863Ae41E1cc662eb39df2f5Ae5C1c7D9F6b6CB79';
+//export const SimpleSips_Address = '0x2C5c588F18a9419b4adC93565DBcd2c9c193aE72';
 
 export const SimpleSips_Contract = [
     {

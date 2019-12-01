@@ -12,6 +12,9 @@ class BuildDrinkScreen extends React.Component {
     previousScreen() {
         history.push('/');
     }
+    recommendationScreen() {
+        history.push('/recommendation');
+    }
     nextScreen() {
         history.push('/ordersummary');
     }
@@ -27,6 +30,7 @@ class BuildDrinkScreen extends React.Component {
         return (
             <div className="body">
                 <div className="navigation-button" onClick={this.previousScreen}>Previous</div>
+                <div className="navigation-button-right" onClick={this.recommendationScreen}>Recommend me something!!</div>
                 <h2>Welcome {this.props.userName}!</h2>
                 <h2>Choose your ingredients</h2>
                 <div className="grid-container">
